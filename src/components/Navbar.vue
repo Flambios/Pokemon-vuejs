@@ -1,6 +1,7 @@
-<script setup>
+<script >
 import logo from '@/assets/img/logo.png';
-
+import Login from './Login.vue';
+import Home from './Home.vue'
 
 </script>
 <template>
@@ -9,7 +10,7 @@ import logo from '@/assets/img/logo.png';
         <div class="container mx-auto px-4">
             <ul class="flex justify-around items-center py-4">
                 <li class="text-gray-500 hover:text-gray-700">
-                    <a href="#">
+                    <a href="/">
                         <img src="../assets/img/home.png" alt="Home" class="inline-block w-6 h-6">
                         <span class="ml-2">Home</span>
                     </a>
@@ -21,33 +22,9 @@ import logo from '@/assets/img/logo.png';
                     </a>
                 </li>
                 <li class="text-gray-500 hover:text-gray-700">
-                    <a href="#" class="flex items-center">
-                        <img src="https://example.com/videogames-icon.png" alt="Videogames" class="inline-block w-6 h-6">
-                        <span class="ml-2">Videogames</span>
-                    </a>
-                </li>
-                <li class="text-gray-500 hover:text-gray-700">
-                    <a href="#" class="flex items-center">
-                        <img src="https://example.com/gcc-pokemon-icon.png" alt="GCC Pokemon" class="inline-block w-6 h-6">
-                        <span class="ml-2">GCC Pokemon</span>
-                    </a>
-                </li>
-                <li class="text-gray-500 hover:text-gray-700">
-                    <a href="#" class="flex items-center">
-                        <img src="https://example.com/tv-pokemon-icon.png" alt="TV Pokemon" class="inline-block w-6 h-6">
-                        <span class="ml-2">TV Pokemon</span>
-                    </a>
-                </li>
-                <li class="text-gray-500 hover:text-gray-700">
-                    <a href="#" class="flex items-center">
-                        <img src="https://example.com/play-pokemon-icon.png" alt="Play Pokemon" class="inline-block w-6 h-6">
-                        <span class="ml-2">Play! Pokemon</span>
-                    </a>
-                </li>
-                <li class="text-gray-500 hover:text-gray-700">
-                    <a href="#" class="flex items-center">
+                    <a href="Login" class="flex items-center">
                         <img src="https://example.com/news-icon.png" alt="News" class="inline-block w-6 h-6">
-                        <span class="ml-2">News</span>
+                        <span class="ml-2">Login</span>
                     </a>
                 </li>
             </ul>
