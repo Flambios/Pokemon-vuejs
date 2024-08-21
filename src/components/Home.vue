@@ -1,30 +1,35 @@
 <template>
-<h1>Home page</h1>
-<form @submit.prevent="home">
-    <button class="button" type="submit">home</button>
-</form>
+    </br>
+    <div class="body3">
+        <h1>Welcome {{ username }}</h1>
+    </div>
 </template>
 
-<script>
-import axios from 'axios'
-let token = localStorage.getItem('token')
 
+<script>
+
+//import { Vue } from 'vue';
+
+const username = localStorage.getItem('data');
 export default {
     name: 'Home',
     
-methods: {
-        home() {
-
-            axios(
-                'https://agile-wildwood-73358-b78a110f353a.herokuapp.com/api/pokemons',{
-                    headers: {
-                        'Accapt': 'application/json',
-                        'authorization' : token,
-                    },
-                })
-                .then(data => console.log(data, this.token))
-                .catch(err => console.log(err))
-        }
-    }
-}
+    data() {
+        return {username}
+    },
+};
 </script>
+
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f9fc;
+        }
+        .body3 {
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+</style>
